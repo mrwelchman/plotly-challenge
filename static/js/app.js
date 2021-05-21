@@ -1,5 +1,5 @@
 // read json and create dropdown menu
-d3.json('../data/samples.json').then(data=>{
+d3.json('data/samples.json').then(data=>{
 	console.log(data);
 	
 	var names = Object.values(data.names);
@@ -27,7 +27,7 @@ optionChanged();
 
 // etl json into dashboard
 function buildPlot(id) {
-	var jsonPath = `../data/samples.json`;
+	var jsonPath = `data/samples.json`;
 	d3.json(jsonPath).then(data=>{
 		console.log(data);
 		// assign variables
